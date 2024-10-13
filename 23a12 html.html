@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Operations with Size</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="total">
+    <!-- Stack description first -->
+    <div class="container description">
+      <h2>Stack</h2>
+      <p>
+        A stack is an abstract data type that represents a collection of
+        elements with a bounded capacity, operating on a Last In, First Out
+        (LIFO) basis. It allows for the addition of elements (push) only at the
+        top and removal of elements (pop) only from the top, similar to a pile
+        of objects.
+      </p>
+      <h3>Basic features of a stack:</h3>
+      <ul>
+        <li>Ordered List: Contains similar data types.</li>
+        <li>
+          LIFO Structure: Last In, First Out (most recent added is removed
+          first).
+        </li>
+        <li>
+          Push/Pop Operations:
+          <ul>
+            <li>push(): Adds an element to the top.</li>
+            <li>pop(): Removes the top element.</li>
+          </ul>
+        </li>
+        <li>
+          Overflow/Underflow:
+          <ul>
+            <li>Overflow: Stack is full (cannot push).</li>
+            <li>Underflow: Stack is empty (cannot pop).</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Applications:</h3>
+      <ul>
+        <li>Function call management</li>
+        <li>Expression evaluation</li>
+        <li>Undo mechanisms in applications</li>
+      </ul>
+    </div>
+
+    <!-- Stack operations below the description -->
+    <div class="container stack-operations">
+      <h1>STACK OPERATIONS</h1>
+
+     
+
+      <div class="stack" id="stack"></div>
+
+      <input
+        type="number"
+        id="inputValue"
+        placeholder="Enter a number"
+        class="input"
+      />
+
+      <!-- Wrap push and pop buttons in a div -->
+      <div class="button-group">
+        <button onclick="push()" class="push">Push</button>
+        <button onclick="pop()" class="pop">Pop</button>
+      </div>
+
+      <div id="message"></div>
+    </div>
+    <div id="message"></div>
+    </div>
+    <div class="output">
+        <p id="stackOutput">Stack: []</p>
+        <p id="sizeOutput">Size: 0</p>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>

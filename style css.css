@@ -1,0 +1,121 @@
+/* Set the body to allow scrolling and vertical centering */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  overflow-y: scroll; /* Enable scrolling */
+}
+
+/* Styling for the container of both description and stack operations */
+.container {
+  background-color: #c89666;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%; /* Set a fixed width for better layout */
+}
+
+/* Styling for the description to add padding, margin, and alignment */
+.description {
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%; /* Take full width */
+  max-width: 800px; /* Limit max width for better readability */
+  text-align: left; /* Ensure the description text is left-aligned */
+}
+
+/* Center the "Stack" heading */
+.description h2 {
+  text-align: center;
+}
+
+/* Ensure the bullet points in the description are left-aligned */
+.description ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Add indentation for bullets */
+}
+
+.description ul li {
+  margin-bottom: 10px; /* Add spacing between bullet points */
+}
+
+/* Center the stack operations vertically in the middle of the page */
+.stack-operations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c89666;
+  padding: 30px;
+  margin-bottom: 40px;
+  min-height: 400px; /* Ensure enough space for the stack diagram */
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.stack {
+  width: 100px;
+  height: 300px;
+  border: 4px solid #333;
+  background-color: #d4d4dc;
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.button-group {
+  display: flex; /* Use flexbox for horizontal alignment */
+  margin-top: 20px; /* Add spacing above the button group */
+}
+
+.push {
+  background-color: green;
+  color: #f0f0f0;
+  width: 80px;
+  height: 30px;
+  margin-right: 10px; /* Space between buttons */
+}
+
+.pop {
+  background-color: red;
+  color: #f0f0f0;
+  width: 80px;
+  height: 30px;
+}
+
+.item {
+  width: 100%;
+  height: 30px;
+  background-color: #00303f;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  bottom: 0;
+  transition: bottom 0.2s ease;
+}
+
+.total {
+  background-color: #dcc7aa;
+}
+
+/* Styling for the input element to look centered */
+.input {
+  display: block;
+  text-align: center;
+  position: relative;
+  border-color: black;
+  margin-left: 60px;
+  margin-right: 40px;
+  height: 30px;
+  width: 200px;
+}
